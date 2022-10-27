@@ -1,0 +1,267 @@
+body{
+    margin: 0 auto;
+    padding : 0;
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.shade{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1;
+}
+
+nav{
+    padding: 0 10%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    
+}
+
+.container-fluid{
+    padding: 0 10%;
+}
+
+.index--navItem{
+    font : "Public Sans";
+    color : hsl(233, 8%, 62%);
+    display: flex;
+    font-size: 18px;
+    margin-left:30px;
+}
+
+.index--navItem:hover{
+    border-bottom: 2px solid greenyellow;
+}
+
+.index--topSection{
+    padding-top : 10%;
+    z-index: -1;
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 10%;
+}
+
+.primaryBtn{
+    background: linear-gradient(90deg, hsl(136, 65%, 51%) 30%, hsl(192, 70%, 51%) 70%);
+    width : 150px;
+    height : 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.primaryBtn:hover{
+    opacity: 0.5;
+}
+
+
+.intro-bg{
+    position: absolute;
+    top : -30%;
+    left : 30%;
+    z-index: 0;
+    transform: scale(0.75);
+}
+
+.mobile-intro{
+    position: relative;
+    top : -40%;
+    z-index: 0;
+    transform: scale(0.75);
+}
+
+.mobile-logo{
+    padding-top: 5%;
+}
+
+.img-mock{
+    position: absolute;
+    width: 50%;
+    left: 60%;
+    top : -10%;
+}
+
+.midSection{
+    padding: 5% 0;
+}
+
+.mid{
+    background-color: hsl(220, 16%, 96%);
+
+}
+h3{
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.title--primary{
+    color : hsl(233, 26%, 24%);
+}
+
+p{
+    color: hsl(233, 8%, 62%);
+}
+
+.article-img{
+    width: 100%;
+    height: 90%;
+}
+.article-author{
+    padding : 0 5%;
+}
+.article-desc{
+    padding: 0 5%;
+    font-size: 10px;
+}
+.title-article{
+    padding-bottom:10% ;
+}
+
+.end{
+    padding-top:10% ;
+    background-color: hsl(0, 0%, 94%);
+}
+h5{
+    font-size: 15px;
+    padding: 0% 5%;
+}
+
+
+
+.foot{
+    color: white;
+    background-color: hsl(233, 26%, 24%);
+    padding-top : 5%;
+    padding-bottom: 10%;
+}
+
+.mobile-foot{
+    display: none;
+}
+
+.collapsed-nav{
+    display: none;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+
+}
+
+.options{
+    padding: 5%;
+    display: none;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px 10px #aaaaaa;
+    z-index: 2;
+
+}
+.option-item{
+    padding-bottom: 5%;
+}
+
+.hide-options{
+    display: none;
+}
+
+
+
+.mobile-topSection{
+    display: none;
+}
+
+.img-mock-mobile{
+    width: 70%;
+    position: relative;
+    top : -100px;
+    transform: translate(-50,-50);
+    
+}
+
+.foot-logo{
+    width: 150px;
+    height: 20px;
+    background-color: white;
+    background-image: url("../images/logo.svg");
+    color : white;
+    background-repeat: no-repeat;
+}
+
+.mobile-introBg{
+    position: absolute;
+    width: 100%;
+    top : 7%;
+    left: 1%;
+    z-index: -1;
+    
+}
+
+.background-white{
+    background-color: white;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width : 900px) {
+    .article-img{
+        width : 80%;
+    }
+    .mobile-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:hsl(233, 26%, 24%) ;
+        color: white;
+    }
+   .mobile-foot div{
+    margin-top: 2%;
+   }
+    .foot{
+        display: none;
+        
+    }
+
+    .index--nav{
+        display: none;
+    }
+    .collapsed-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+   .index--topSection{
+    display: none;
+   }
+   .mobile-topSection{
+    display: block;
+    text-align: center;
+   }
+   .row{
+    align-items: center;
+    text-align: center;
+   }
+   .mobile-btn{
+    margin: 0 auto;
+   }
+
+  
+}
